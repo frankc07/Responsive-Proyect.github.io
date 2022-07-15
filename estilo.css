@@ -1,0 +1,345 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    width: 100vw;
+    
+    background-color: #445a64;
+    
+    display: grid;
+    grid-template-areas: "item-1 item-2";
+    justify-content: flex-start;
+    font-family: 'Finlandica', sans-serif;
+}
+
+/* ------Inicio de Barra Navegadora Vertical------ */
+.sideBar{
+    width: 15vw;
+    height: 120vh;
+    grid-area: item-1;
+
+    background-color: #74868fb9 ;
+    
+    display: flex;
+    flex-direction: column;
+
+    cursor: pointer;
+    overflow: scroll;
+}
+  
+.sideBar img{
+    margin: 8px 0 0 6px;
+    width: 20px;
+
+    margin-top: 5px;
+    
+}
+.sideBar button{
+    width: 120px;
+    height: 30px;
+    margin-left: 50px;
+    font-family: 'Finlandica', sans-serif;
+    background-color: #445a64;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* ------Fin de Barra Navegadora Vertical------ */
+
+/*------Inicion de Contenido Principal-----*/
+  .main-content{
+    width: auto;
+    height: 100vh;
+    grid-area: item-2;
+  
+    display: grid;
+  
+    grid-template-areas:
+      "box-1"
+      "box-2"
+      "box-3";
+  
+    align-content: flex-start;
+}
+
+ /*-----Inicio de Barra Navegadora Horizontal----*/
+.navbar{
+    grid-area: box-1;
+    width: auto;
+    height: 50px;
+    background-color: #445a64;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navbar input{
+    width: 200px;
+    height: 30px;
+    /* margin-left: 400px; */
+    background-color: #445a64;
+    color: white;
+    cursor: pointer;
+}
+
+.IconS{
+    margin-left: 10px;
+}
+.IconT{
+    margin-left: 300px;
+}
+
+.navbar button{
+    width: auto;
+    height: 40px;
+    margin-left: 10px;
+    font-family: 'Finlandica', sans-serif;
+    background-color: rgba(0, 255, 255, 0.11);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer
+}
+
+/*------Fin de Barra Navegadora Horizontal------*/
+  
+/*------Inicio de Barra de Botones Horizontales */
+.buttonNav{
+    height: 40px;
+    grid-area: box-2;
+    display: flex;
+    /* margin-left: 140px; */
+    align-items: center;
+}
+
+.buttonNav button{
+    width: 110px;
+    height: 30px;
+    margin-left: 40px;
+    font-family: 'Finlandica', sans-serif;
+    background-color: rgba(0, 255, 255, 0.11);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.buttonNav button:hover{
+    background-color: rgb(41, 61, 61);
+    transform: translateY(-10%);
+}
+
+/*-----Fin de Barra de Botones Horizontales----*/
+
+/*-------Contenido Multimedia-------*/
+.videos{
+    grid-area: box-3;    
+}
+.box-1{
+    margin-top: 3px;
+    width: auto;
+    height: 280px;
+   
+    display: flex;
+}
+.video-1{
+    
+    margin-left: 5px;
+    width: 300px;
+    height: 220px;
+    border-radius: 5px;
+    
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    transition: all 400ms ease;
+}
+.video-1 p{
+    margin-top: 10px;
+}
+.video-1:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+}
+
+.video-2{
+    width: 300px;
+    height: 220px;
+    margin-left: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    transition: all 400ms ease;
+}
+.video-2 p{
+    margin-top: 10px;
+}
+.video-2:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+}
+
+.video-3{
+    width: 300px;
+    height: 220px;
+    margin-left: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    transition: all 400ms ease;
+}
+.video-3 p{
+    margin-top: 10px;
+}
+.video-3:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+}
+
+.video-4{
+    width: 300px;
+    height: 220px;
+    margin-left: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    transition: all 400ms ease;
+}
+.video-4 p{
+    margin-top: 10px;
+}
+.video-4:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+}
+
+.box-2{
+    margin-top: 3px;
+    width: auto;
+    height: 280px;
+    
+    display: flex;
+}
+.video-5{
+    width: 300px;
+    height: 220px;
+    margin-left: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    transition: all 400ms ease;
+}
+.video-5 p{
+    margin-top: 10px;
+}
+.video-5:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+}
+
+.video-6{
+    width: 300px;
+    height: 220px;
+    margin-left: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    transition: all 400ms ease;
+}
+.video-6 p{
+    margin-top: 10px;
+}
+.video-6:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+}
+
+.video-7{
+    width: 300px;
+    height: 220px;
+    margin-left: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    transition: all 400ms ease;
+}
+.video-8 p{
+    margin-top: 10px;
+}
+.video-7:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+}
+
+.video-8{
+    width: 300px;
+    height: 220px;
+    margin-left: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    transition: all 400ms ease;
+}
+.video-8 p{
+    margin-top: 10px;
+}
+.video-8:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+}
+
+.box-3{
+    margin-top: 3px;
+    width: auto;
+    height: 280px;
+    
+    display: flex;
+}
+.video-9{
+    width: 300px;
+    height: 220px;
+    margin-left: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    transition: all 400ms ease;
+}
+.video-9 p{
+    margin-top: 10px;
+}
+.video-9:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+}
+
+.video-10{
+    width: 300px;
+    height: 220px;
+    margin-left: 5px;
+    margin-left: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    transition: all 400ms ease;
+}
+.video-10 p{
+    margin-top: 10px;
+}
+.video-10:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+}
+
+.video-11{
+    width: 300px;
+    height: 220px;
+    margin-left: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    transition: all 400ms ease;
+}
+.video-11 p{
+    margin-top: 10px;
+}
+.video-11:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+}
+
+.video-12{
+    width: 300px;
+    height: 220px;
+    margin-left: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    transition: all 400ms ease;
+}
+.video-12 p{
+    margin-top: 10px;
+}
+.video-12:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+}
+
